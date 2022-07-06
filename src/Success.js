@@ -2,8 +2,8 @@ import React from 'react'
 
 function Success() {
   return (
-    <div>
-        <h1>Registration Successfully...</h1>
+    <div className='success'>
+        <h1 style={{marginLeft:"3%",}}>Registration Successfully...</h1>
     </div>
   )
 }
