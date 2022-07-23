@@ -7,6 +7,10 @@ import About from './About';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Success from './Success';
+import Tajmahal from './Content/Tajmahal';
+import Footer from './footer/Footer';
+import Charminar from './Content/Charminar';
+import RedFort from './Content/RedFort';
 
 
 function App() {
@@ -20,7 +24,11 @@ function App() {
       <Route path="contact" element={<Contact />} />
       <Route path="register" element={<RegistrationFormReact />} />
       <Route path="success" element={<Success />} />
+      <Route path="tlink" element={<Tajmahal />}/>
+      <Route path="chlink" element={<Charminar/>}/>
+      <Route path="redlink" element={<RedFort/>}/>
      </Routes>
+   <Footer />
 
     </div>
   );

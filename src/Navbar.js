@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Footer from './Loding'
 
 function Navbar() {
   return (
     <div>
+     
      <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/">Navbar</NavLink>
@@ -23,6 +25,9 @@ function Navbar() {
         </li>
         
       </ul>
+      <li className="nav-item d-flex" style={{marginRight:"40%"}}>
+      <Footer />
+      </li>
      
       <li className="nav-item d-flex">
           <NavLink className="nav-link" to="/register">Registration</NavLink>

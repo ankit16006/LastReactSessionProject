@@ -1,4 +1,8 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
+import taj from './asset/taj1.jpg'
+import charminar from './asset/charminar.jpg';
+import redfort from './asset/redfort.jpg'
 
 function Home() {
   return (
@@ -11,19 +15,31 @@ function Home() {
   </div>
   <div class="achievements">
     <div class="work">
-      <i class="fas fa-atom"></i>
-      <p class="work-heading">Projects</p>
-      <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
+    
+    <NavLink className="nav-link" to="/tlink">
+  <img src={taj}></img>
+      <p class="work-heading"><b>Taj Mahal</b></p>
+      <p class="work-text">It was built by the fifth Mughal emperor, Shah Jahan in 1631 in memory of his third but the most favourite wife, in fact a soul-mate Mumtaz Mahal, a Muslim Persian princess</p>
+      <a href=''>Read More...</a>
+        </NavLink>
+    
+   
     </div>
     <div class="work">
-      <i class="fas fa-skiing"></i>
-      <p class="work-heading">Skills</p>
-      <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
+    <NavLink className="nav-link" to="/chlink">
+  <img src={charminar} style={{width:'300px',height:'180px'}}></img>
+      <p class="work-heading"><b>Charminar</b></p>
+      <p class="work-text">The Charminar was established more than four centuries ago by the fifth Sultan of the Qutb Shahi dynasty, namely Sultan Muhammad Quli Qutub Shah.</p>
+      <a href=''>Read More...</a>
+    </NavLink>
     </div>
     <div class="work">
-      <i class="fas fa-ethernet"></i>
-      <p class="work-heading">Network</p>
-      <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+    <NavLink className="nav-link" to="/redlink">
+  <img src={redfort}></img>
+      <p class="work-heading"><b>Red Fort</b></p>
+      <p class="work-text">The Red Fort was originally made of lime stones. It was when the white stone began chipping off, the British had to paint it with red.</p>
+      <a href=''>Read More...</a>
+    </NavLink>
     </div>
   </div>
  
