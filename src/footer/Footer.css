@@ -14,7 +14,7 @@ footer{
   background: #111;
 }
 footer .article{
-  max-width: 1350px;
+  /* max-width: 1350px; */
   margin: auto;
   padding: 20px;
   display: flex;
@@ -22,10 +22,11 @@ footer .article{
   justify-content: space-between;
 }
 footer .article p,a{
-  color: #fff;
+  color: rgb(206, 179, 219);
+  
 }
 footer .article .box{
-  width: 33%;
+  /* width: 33%; */
   transition: all 0.4s ease;
 }
 footer .article .topic{

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Footer from './Loding'
+import Loading from './Loding'
 
 function Navbar() {
   return (
@@ -26,7 +26,7 @@ function Navbar() {
         
       </ul>
       <li className="nav-item d-flex" style={{marginRight:"40%"}}>
-      <Footer />
+      <Loading />
       </li>
      
       <li className="nav-item d-flex">

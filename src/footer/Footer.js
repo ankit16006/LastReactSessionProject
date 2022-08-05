@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import './Footer.css'
 function Footer() {
   return (
 
@@ -7,11 +7,11 @@ function Footer() {
 <div class="footer" id="fooot">
   <div class="footer-content">
     <div class="footer-section about">
-      <h1 class="logo-text"><span>ReactSession</span> Website</h1>
-      <p>Respond to client needs for applications with an eye to the most feasible and effective solutions.
-Coordinate with team members to create client apps in a coordinated and timely manner.
-Ensure that apps are tested to meet total performance requirements.
-Optimize the interfacing of the apps with a variety of systems to ensure flexible and agile use </p>
+      <h1 class="logo-text"><span>Historical</span> Website</h1>
+      <p>India has 116 ticketed monuments in 19 states, managed by the Archeological Survey of India. 
+        Out of the 116 monuments, 17 monuments are located in Uttar Pradesh, 16 are in Maharashtra, 
+        12 are in Karnataka, 10 are in Delhi, eight are in Madhya Pradesh, 
+        seven are in Tamil Nadu, and six are in Gujarat. </p>
     <div class="contact">
       <span><i class="fa fa-phone"></i> &nbsp; 123-456-789</span>
       <span><i class="fa fa-envelope"></i> &nbsp; info@hunterdotnet.com</span>
@@ -27,14 +27,14 @@ Optimize the interfacing of the apps with a variety of systems to ensure flexibl
     <div class="footer-section links">
       <h2>Quick links</h2>
       <br></br>
-      <ul>
-        <a href="#about">
+      <ul style={{listStyle:"none"}}>
+        <a href="/about">
           <li>About</li>
         </a>
-        <a href="#fooot">
+        <a href="/contact">
           <li>contact</li>
         </a>
-        <a href="login.html">
+        <a href="/login">
           <li>login</li>
         </a>
         <a href="#">

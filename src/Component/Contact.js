@@ -1,7 +1,10 @@
 // import React from 'react'
 import React, {useState} from "react";
+// import { NavLink } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
 
 function Contact() {
+  const navigate = useNavigate();
     const[data, setData] = useState({
         fullname:'',
         phone:'',
@@ -29,6 +32,7 @@ function Contact() {
        
         alert("Thank u for contacting Me!")
         setData("")
+        navigate("/")
       
        }
   return (
@@ -36,10 +40,11 @@ function Contact() {
     <div className="">
     <h1 className="text-center" style={{marginLeft:"80px", marginTop:"20px"}}>Contact Us</h1>
 </div>
-<div className="container contact_div">
+<div className="container contact_div"  style={{height:"500px"}}>
     <div className="row" >
         <div className="col-md-6 col-10 mx-auto" >
             <form onSubmit={formSubmit} style={{paddingTop:"5px"}} >
+              
             <div className="mb-3">
   <label  className="form-label">FullName</label>
   <input type="text" className="form-control" id="exampleFormControlInput1" 

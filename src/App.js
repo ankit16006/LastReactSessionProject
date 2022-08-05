@@ -1,16 +1,17 @@
 
 import './App.css';
-import RegistrationFormReact from './RegistrationFormReact';
+import RegistrationFormReact from './Component/registration/RegistrationFormReact';
 import {Routes, Route} from 'react-router-dom'
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Navbar from './Navbar';
-import Success from './Success';
+import Home from './Component/Home';
+import About from './Component/About';
+import Contact from './Component/Contact';
+import Navbar from './Component/Navbar';
+import Success from './Component/Success';
 import Tajmahal from './Content/Tajmahal';
 import Footer from './footer/Footer';
 import Charminar from './Content/Charminar';
 import RedFort from './Content/RedFort';
+import Login from './Component/login/Login';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route path="tlink" element={<Tajmahal />}/>
       <Route path="chlink" element={<Charminar/>}/>
       <Route path="redlink" element={<RedFort/>}/>
+      <Route path="login" element={<Login/>}/>
      </Routes>
    <Footer />
 

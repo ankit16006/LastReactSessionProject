@@ -42,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 580px;
+  height: 600px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
   background-size: cover;
   background-position: center;
@@ -130,9 +130,13 @@ body {
   margin: 10px 0;
 }
 
+.achievements .work:hover{
+  border: 2px solid rgb(61, 61, 61);
+}
 .about-me {
   display: flex;
   justify-content: center;
+  height: 100vh;
   align-items: center;
   padding: 40px 80px;
   border-top: 2px solid #eeeeee;
@@ -201,50 +205,7 @@ body {
 
 /* .regiterForm */
 
-.container{
-  justify-content: center;
-  background-color: rgb(207, 169, 169);
-  width: 400px;
-  height: 500px;
-  margin-top: 3%;
-  margin-left: 40%;
-  border-radius: 20px;
-}
-.regiterForm{
-padding-top: 20px;
-}
 
-.regiterForm h2{
-margin-left: 50px;
-}
-.regiterForm label {
-
-  font-size: 26px;
-margin-top: 20px;
-  padding-left: 70px;
-  line-height: 50px;
-}
-.regiterForm input{
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  height: 40px;
-  width: 300px;
-  margin-left: 40px;
-  font-size: 20px;
-}
-.regiterForm button{
-  width: 180px;
-  height: 40px;
-  margin-top: 40px;
-  margin-left: 100px;
-  border: none;
-  font-size: 18px;
-  border-radius: 10px;
-}
-.regiterForm button:hover{
-  background-color: rgb(141, 192, 207);
-}
 
 .success{
 
@@ -288,6 +249,50 @@ border-bottom:2px solid blue ;
   margin-left: 10%;
   width: 800px;
   text-indent: 50px;
+}
+
+.charminar-text{
+  text-indent: 50px;
+ width: 700px;
+}
+.MinarContent{
+  box-shadow: 1px 2px 7px 2px white;
+  padding-top: 20px;
+  width: 800px;
+  margin-left: 22%;
+  padding-left: 30px;
+}
+.MinarContent img{
+  width: 97%;
+  
+  height: 300px;
+/* margin-left: 190px; */
+margin-top: 40px;
+margin-bottom: 30px;
+}
+.redfort{
+width: 800px;
+box-shadow: 1px 2px 7px 2px white;
+margin-left: 22%;
+}
+.redfort img{
+  width: 800px;
+  height: 200px;
+}
+.redfort h2{
+  padding-top: 30px;
+  margin-left: 39%;
+  border-bottom: 1px solid #0f27ac;
+  width: 130px;
+}
+.rcontent{
+  padding-left: 30px;
+  padding-top: 20px;
+  text-indent: 40px;
+}
+.redfortContent{
+  width: 750px;
+ 
 }
 
 /* ----------------------footer-------------- */

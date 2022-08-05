@@ -1,8 +1,8 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import taj from './asset/taj1.jpg'
-import charminar from './asset/charminar.jpg';
-import redfort from './asset/redfort.jpg'
+import taj from '../asset/taj1.jpg'
+import charminar from '../asset/charminar.jpg';
+import redfort from '../asset/redfort.jpg'
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
   <div class="intro">
     <h1>A Web Developer</h1>
     <p>I am a web developer and I love to create websites.</p>
-    <button>Learn More</button>
+    <a href='https://traveltriangle.com/blog/famous-historical-places-in-india/'><button>Learn More</button></a>
   </div>
   <div class="achievements">
     <div class="work">
