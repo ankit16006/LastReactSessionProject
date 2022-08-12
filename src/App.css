@@ -396,3 +396,11 @@ margin-left: 22%;
   border: 1px solid #05f7ff;;
   right: 15%;
 }
+
+.listdata{
+  border: 1px solid black;
+  width: 350px;
+  height: auto;
+  margin-left: 40%;
+
+}

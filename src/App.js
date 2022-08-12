@@ -12,6 +12,7 @@ import Footer from './footer/Footer';
 import Charminar from './Content/Charminar';
 import RedFort from './Content/RedFort';
 import Login from './Component/login/Login';
+import TableList from './tableList/TableList';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path="chlink" element={<Charminar/>}/>
       <Route path="redlink" element={<RedFort/>}/>
       <Route path="login" element={<Login/>}/>
+      <Route path="tablelist" element={<TableList/>}/>
      </Routes>
    <Footer />
 

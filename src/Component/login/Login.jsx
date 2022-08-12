@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import './Login.css';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { showList, deleteList } from '../../action/action'
 
 
 function Login() {
@@ -11,6 +13,7 @@ function Login() {
     const [data,setData] = useState('')
     // const [successMsg,setSuccessMsg] = useState('')
     const [error, setError] = useState('');
+    const disptch = useDispatch()
   
 //     const [submitted, setSubmitted] = useState(false);
 //   const [error, setError] = useState(false);
@@ -30,12 +33,14 @@ function Login() {
 
   const submitHandler = (e)  => {
     e.preventDefault();
+   
   axios.get("https://62e7aa8f0e5d74566af95e94.mockapi.io/create/react-crud")
     .then((Response) =>{
         // console.log(Response.data);
         setData(Response.data)
         
     })
+    disptch(showList(email,password))
     // console.log(item);
     // setData(item)
     {
@@ -47,7 +52,7 @@ function Login() {
         // setSubmitted(true);
    
         alert("Login Successfully...")
-        navigate('/')
+        navigate('/tablelist')
           } else {
               setError("plz check the Email and Password");
         //   setSubmitted(true);
